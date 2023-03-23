@@ -1,0 +1,15 @@
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.DAL.deps.json
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.AssemblyReference.cache
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.AssemblyInfoInputs.cache
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.AssemblyInfo.cs
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.CoreCompileInputs.cache
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\refint\SistemaVenta.DAL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\ref\SistemaVenta.DAL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVentas.Entity.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\bin\Debug\net6.0\SistemaVentas.Entity.pdb
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\SistemaVenta.DAL\obj\Debug\net6.0\SistemaVenta.DAL.csproj.CopyComplete

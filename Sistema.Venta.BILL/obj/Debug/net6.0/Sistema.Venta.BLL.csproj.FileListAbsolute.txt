@@ -1,0 +1,17 @@
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\Sistema.Venta.BLL.deps.json
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\Sistema.Venta.BLL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\Sistema.Venta.BLL.pdb
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.csproj.AssemblyReference.cache
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.AssemblyInfoInputs.cache
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.AssemblyInfo.cs
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.csproj.CoreCompileInputs.cache
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.csproj.CopyComplete
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\refint\Sistema.Venta.BLL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\Sistema.Venta.BLL.pdb
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\obj\Debug\net6.0\ref\Sistema.Venta.BLL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\SistemaVenta.DAL.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\SistemaVentas.Entity.dll
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\SistemaVenta.DAL.pdb
+C:\Users\WPOSS\Desktop\CursoVentas\Material del Curso\SistemaVentas\Sistema.Venta.BILL\bin\Debug\net6.0\SistemaVentas.Entity.pdb
