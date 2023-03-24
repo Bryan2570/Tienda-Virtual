@@ -11,7 +11,7 @@ using SistemaVentas.Entity;
 
 namespace SistemaVenta.DAL.Implementacion
 {
-    public class VentaRepository : GenericRepository<Venta>, IVentaRepository
+    public class VentaRepository : GenericRepository<Ventas>, IVentaRepository
     {
         private readonly DBVENTAContext _dbContext;
 
@@ -20,9 +20,9 @@ namespace SistemaVenta.DAL.Implementacion
             _dbContext = dbContext;
         }
 
-        public async Task<Venta> Registrar(Venta entidad)
+        public async Task<Ventas> Registrar(Ventas entidad)
         {
-            Venta ventaGenerada =  new Venta();
+            Ventas ventaGenerada =  new Ventas();
             using (var transaction = _dbContext.Database.BeginTransaction())
             {
                 try

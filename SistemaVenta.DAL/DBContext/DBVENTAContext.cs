@@ -28,7 +28,7 @@ namespace SistemaVenta.DAL.DBContext
         public virtual DbSet<RolMenu> RolMenus { get; set; } = null!;
         public virtual DbSet<TipoDocumentoVenta> TipoDocumentoVenta { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
-        public virtual DbSet<Venta> Venta { get; set; } = null!;
+        public virtual DbSet<Ventas> Venta { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -426,7 +426,7 @@ namespace SistemaVenta.DAL.DBContext
                     .HasConstraintName("FK__Usuario__idRol__300424B4");
             });
 
-            modelBuilder.Entity<Venta>(entity =>
+            modelBuilder.Entity<Ventas>(entity =>
             {
                 entity.HasKey(e => e.IdVenta)
                     .HasName("PK__Venta__077D56141B503845");

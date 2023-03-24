@@ -7,7 +7,7 @@ namespace SistemaVentas.Entity
     {
         public Usuario()
         {
-            Venta = new HashSet<Venta>();
+            Venta = new HashSet<Ventas>();
         }
 
         public int IdUsuario { get; set; }
@@ -22,6 +22,6 @@ namespace SistemaVentas.Entity
         public DateTime? FechaRegistro { get; set; }
 
         public virtual Rol? IdRolNavigation { get; set; }
-        public virtual ICollection<Venta> Venta { get; set; }
+        public virtual ICollection<Ventas> Venta { get; set; }
     }
 }

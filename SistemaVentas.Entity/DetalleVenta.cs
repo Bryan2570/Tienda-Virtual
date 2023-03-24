@@ -15,6 +15,6 @@ namespace SistemaVentas.Entity
         public decimal? Precio { get; set; }
         public decimal? Total { get; set; }
 
-        public virtual Venta? IdVentaNavigation { get; set; }
+        public virtual Ventas? IdVentaNavigation { get; set; }
     }
 }
