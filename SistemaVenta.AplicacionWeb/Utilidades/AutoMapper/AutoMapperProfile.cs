@@ -100,7 +100,7 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.AutoMapper
             #endregion
 
             #region Venta
-            CreateMap<Venta, VMVenta>()
+            CreateMap<Ventas, VMVenta>()
               .ForMember(destino =>
                   destino.TipoDocumentoVenta,
                   opt => opt.MapFrom(origen => origen.IdTipoDocumentoVentaNavigation.Descripcion)
@@ -125,7 +125,7 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.AutoMapper
                   destino.FechaRegistro,
                   opt => opt.MapFrom(origen => origen.FechaRegistro.Value.ToString("dd/MM/yyyy"))
               );
-            CreateMap<VMVenta,Venta >()
+            CreateMap<VMVenta,Ventas >()
               .ForMember(destino =>
                   destino.SubTotal,
                   opt => opt.MapFrom(origen => Convert.ToDecimal(origen.SubTotal, new CultureInfo("es-CO")))

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XYYl3I3vpO21NFAcyOCGT077RuOEHPnW7dPmPovPmyjTQC9CdJIaxATNQgWtdCNoJc5UaOlmrVERw0oku4FXTQ==",
+  "dgSpecHash": "WFlbMqWVp5Q18hTezJUBJ1kwoNCOIdAtCPflqupfYmVXUMG71BNu2igTvmPwpc53Sbn/Ge7ZPpH966irTCAohQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj",
+  "projectFilePath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WPOSS\\.nuget\\packages\\firebaseauthentication.net\\3.7.2\\firebaseauthentication.net.3.7.2.nupkg.sha512",
     "C:\\Users\\WPOSS\\.nuget\\packages\\firebasestorage.net\\1.0.3\\firebasestorage.net.1.0.3.nupkg.sha512",

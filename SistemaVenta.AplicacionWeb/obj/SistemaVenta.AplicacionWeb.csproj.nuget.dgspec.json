@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj": {}
+    "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj": {
+    "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj",
         "projectName": "Sistema.Venta.BLL",
-        "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj",
+        "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj",
         "packagesPath": "C:\\Users\\WPOSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\obj\\",
+        "outputPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
               },
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj"
               }
             }
           }
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj": {
+    "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj",
+        "projectUniqueName": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj",
         "projectName": "SistemaVenta.AplicacionWeb",
-        "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj",
+        "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\SistemaVenta.AplicacionWeb.csproj",
         "packagesPath": "C:\\Users\\WPOSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.AplicacionWeb\\obj\\",
+        "outputPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,14 +108,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj"
               },
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj"
               },
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj"
               }
             }
           }
@@ -137,6 +137,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "DinkToPdf": {
+              "target": "Package",
+              "version": "[1.0.8, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -166,14 +170,14 @@
         }
       }
     },
-    "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+    "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
         "projectName": "SistemaVenta.DAL",
-        "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
+        "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj",
         "packagesPath": "C:\\Users\\WPOSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\obj\\",
+        "outputPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -194,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj"
               }
             }
           }
@@ -229,14 +233,14 @@
         }
       }
     },
-    "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj": {
+    "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
+        "projectUniqueName": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
         "projectName": "SistemaVenta.IOC",
-        "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
+        "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.IOC\\SistemaVenta.IOC.csproj",
         "packagesPath": "C:\\Users\\WPOSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.IOC\\obj\\",
+        "outputPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.IOC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -257,11 +261,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\Sistema.Venta.BILL\\Sistema.Venta.BLL.csproj"
               },
-              "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
-                "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
+              "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj": {
+                "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.DAL\\SistemaVenta.DAL.csproj"
               }
             }
           }
@@ -295,14 +299,14 @@
         }
       }
     },
-    "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
+    "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj",
         "projectName": "SistemaVentas.Entity",
-        "projectPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj",
+        "projectPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\SistemaVentas.Entity.csproj",
         "packagesPath": "C:\\Users\\WPOSS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\WPOSS\\Desktop\\CursoVentas\\Material del Curso\\SistemaVentas\\SistemaVentas.Entity\\obj\\",
+        "outputPath": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVentas.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
