@@ -6,6 +6,7 @@ namespace SistemaVenta.AplicacionWeb.Models.ViewModels
     {
 
         public int? IdProducto { get; set; }
+        public int? IdTipoDocumentoVenta { get; set; }
         public string? MarcaProducto { get; set; }
         public string? DescripcionProducto { get; set; }
         public string? CategoriaProducto { get; set; }

@@ -36,8 +36,6 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             List<VMProducto> vmProductoLista = _mapper.Map<List<VMProducto>>(await _productoServicio.Lista());
 
             return StatusCode(StatusCodes.Status200OK, new {data = vmProductoLista });
-
-            
         }
 
 
