@@ -8,7 +8,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SistemaVenta.DAL.DBContext;
-using SistemaVenta.DAL.DBContext;
 using SistemaVenta.DAL.Implementacion;
 using SistemaVenta.DAL.Interfaces;
 using Sistema.Venta.BLL.Interfaces;

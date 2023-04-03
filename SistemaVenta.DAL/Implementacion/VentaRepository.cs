@@ -71,10 +71,12 @@ namespace SistemaVenta.DAL.Implementacion
         {
             List<DetalleVenta> listaResumen = await _dbContext.DetalleVenta
                 .Include(v => v.IdVentaNavigation)
-                .ThenInclude(U => U.IdUsuarioNavigation)
-                .Include(V => V.IdVentaNavigation)
+                .ThenInclude(u => u.IdUsuarioNavigation)
+                .Include(v => v.IdVentaNavigation)
                 .ThenInclude(tdv => tdv.IdTipoDocumentoVentaNavigation)
-                .Where(dv => dv.IdVentaNavigation.FechaRegistro.Value.Date >= FechaFin.Date).ToListAsync();
+                .Where(dv => dv.IdVentaNavigation.FechaRegistro.Value.Date >= FechaInicio.Date && 
+                dv.IdVentaNavigation.FechaRegistro.Value.Date <= FechaFin.Date).ToListAsync();
+
             return listaResumen;
         }
     }
