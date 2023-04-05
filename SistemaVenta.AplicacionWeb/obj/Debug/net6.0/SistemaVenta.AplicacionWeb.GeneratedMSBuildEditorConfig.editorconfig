@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\WPOSS\Documents\Tienda-Virtual\SistemaVenta.AplicacionWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/WPOSS/Documents/Tienda-Virtual/SistemaVenta.AplicacionWeb/Views/Acceso/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WPOSS/Documents/Tienda-Virtual/SistemaVenta.AplicacionWeb/Views/Acceso/RestablecerClave.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNvXFJlc3RhYmxlY2VyQ2xhdmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/WPOSS/Documents/Tienda-Virtual/SistemaVenta.AplicacionWeb/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/WPOSS/Documents/Tienda-Virtual/SistemaVenta.AplicacionWeb/Views/ReporteVenta/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVZlbnRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WPOSS/Documents/Tienda-Virtual/SistemaVenta.AplicacionWeb/Views/Shared/Components/MenuUsuario/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVVzdWFyaW9cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/WPOSS/Documents/Tienda-Virtual/SistemaVenta.AplicacionWeb/Views/Shared/Error.cshtml]

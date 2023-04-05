@@ -26,10 +26,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\vistas\DashBoard_Index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\vistas\DashBoard_Index.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\js\sb-admin-2.js" />
     <None Include="wwwroot\js\sb-admin-2.min.js" />
     <None Include="wwwroot\js\vistas\chart-bar-demo.js" />
     <None Include="wwwroot\js\vistas\chart-pie-demo.js" />
+    <None Include="wwwroot\js\vistas\DashBoard_Index.js" />
     <None Include="wwwroot\js\vistas\datatables-demo.js" />
   </ItemGroup>
 
