@@ -211,9 +211,13 @@ namespace Sistema.Venta.BLL.Implementacion
                     throw new TaskCanceledException("El usuario no existe!");
 
                 usuario_encontrado.Correo = entidad.Correo;
-                usuario_encontrado.Clave = entidad.Clave;
+                
+                usuario_encontrado.Telefono = entidad.Telefono;
 
                 bool respuesta = await _repositorio.Editar(usuario_encontrado);
+
+                if (entidad.Clave == null)
+                    usuario_encontrado.Clave = usuario_encontrado.Clave;
 
                 return respuesta;
             }
@@ -232,7 +236,11 @@ namespace Sistema.Venta.BLL.Implementacion
                 if(usuario_encontrado == null)
                     throw new TaskCanceledException("Usuario no encontrado...");
 
-                if (usuario_encontrado.Clave != _utilidadesService.ConvertirSha256(ClaveActual))
+                string valor = _utilidadesService.ConvertirSha256(ClaveActual);
+
+                Console.WriteLine(valor);
+
+                if ( usuario_encontrado.Clave.ToUpper() != _utilidadesService.ConvertirSha256(ClaveActual))
                 throw new TaskCanceledException("La contraseña ingresada como actual no es correcta");
 
                 usuario_encontrado.Clave = _utilidadesService.ConvertirSha256(ClaveNueva);
