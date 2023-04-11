@@ -22,7 +22,6 @@ namespace Sistema.Venta.BLL.Implementacion
             _repositorioRolMenu = repositorioRolMenu;
             _repositorioUsuario = repositorioUsuario;
         }
-
         public async Task<List<Menu>> ObtenerMenus(int idUsuario)
         {
             IQueryable<Usuario> tbUsuario = await _repositorioUsuario.Consultar(u => u.IdUsuario == idUsuario);

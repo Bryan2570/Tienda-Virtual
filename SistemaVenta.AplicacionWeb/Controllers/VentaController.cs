@@ -69,7 +69,6 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                     .Where(c => c.Type == ClaimTypes.NameIdentifier)
                     .Select(c => c.Value).SingleOrDefault();
 
-
                 modelo.IdUsuario = int.Parse(idUsuario);
 
                 Ventas venta_creada = await _ventaServicio.Registrar(_mapper.Map<Ventas>(modelo));

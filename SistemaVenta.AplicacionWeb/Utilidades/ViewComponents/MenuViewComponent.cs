@@ -36,7 +36,6 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.ViewComponents
             {
                 listaMenus = new List<VMMenu> { };
             }
-
             return View(listaMenus);
         }
 
