@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\js\\vistas\\Historial_venta.js"
     },
     {
+      "Id": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Home_Perfil.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\Home_Perfil.js"
+    },
+    {
       "Id": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\js\\vistas\\Negocio_Index.js",
       "PackagePath": "staticwebassets\\js\\vistas\\Negocio_Index.js"
     },
