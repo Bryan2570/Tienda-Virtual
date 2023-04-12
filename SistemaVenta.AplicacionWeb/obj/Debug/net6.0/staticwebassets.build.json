@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CFaiD8tdc9oLMC3ZQm7C6ZxBa278RSE7PmkVgi9GCF4=",
+  "Hash": "ySuhGXrfkh5W6Q4GROXv+vEqdIxZksdfe5Hf3F36gVU=",
   "Source": "SistemaVenta.AplicacionWeb",
   "BasePath": "_content/SistemaVenta.AplicacionWeb",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\img\\Login_Bellas.jpeg",
+      "SourceId": "SistemaVenta.AplicacionWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\",
+      "BasePath": "_content/SistemaVenta.AplicacionWeb",
+      "RelativePath": "img/Login_Bellas.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Login_Bellas.jpeg"
     },
     {
       "Identity": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\img\\undraw_posting_photo.svg",

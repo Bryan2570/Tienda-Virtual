@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\img\\Login_Bellas.jpeg",
+      "PackagePath": "staticwebassets\\img\\Login_Bellas.jpeg"
+    },
+    {
       "Id": "C:\\Users\\WPOSS\\Documents\\Tienda-Virtual\\SistemaVenta.AplicacionWeb\\wwwroot\\img\\undraw_posting_photo.svg",
       "PackagePath": "staticwebassets\\img\\undraw_posting_photo.svg"
     },
