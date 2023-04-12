@@ -96,8 +96,8 @@ $(document).ready(function () {
                         labels: piechart_labaels,
                         datasets: [{
                             data: piechart_data,
-                            backgroundColor: ['#EDBDE7', '#E892BF', '#FFC9D9', "#FFE0D5"],
-                            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', "#FF5733"],
+                            backgroundColor: ['#edc2e8', '#E892BF', '#FFC9D9', "#FFE0D5"],
+                            hoverBackgroundColor: ['#eb9be1', '#e675b0', '#fc9ab7', "#fcc3ae"],
                             hoverBorderColor: "rgba(234, 236, 244, 1)",
                         }],
                     },
