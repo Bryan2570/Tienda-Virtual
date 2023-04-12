@@ -57,12 +57,12 @@ $(document).ready(function () {
                         labels: barchart_labaels,
                         datasets: [{
                             label: "Cantidad",
-                            backgroundColor: "#4e73df",
-                            hoverBackgroundColor: "#2e59d9",
-                            borderColor: "#4e73df",
+                            backgroundColor: "#ED007E",
+                            hoverBackgroundColor: "#d43187",
+                            borderColor: "#b80663",
                             data: barchart_data,
                         }],
-                    },
+                    }, 
                     options: {
                         maintainAspectRatio: false,
                         legend: {
@@ -96,7 +96,7 @@ $(document).ready(function () {
                         labels: piechart_labaels,
                         datasets: [{
                             data: piechart_data,
-                            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', "#FF785B"],
+                            backgroundColor: ['#EDBDE7', '#E892BF', '#FFC9D9', "#FFE0D5"],
                             hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf', "#FF5733"],
                             hoverBorderColor: "rgba(234, 236, 244, 1)",
                         }],
