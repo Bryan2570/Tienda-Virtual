@@ -184,6 +184,9 @@ namespace Sistema.Venta.BLL.Implementacion
 
         public async Task<Usuario> ObtenerPorCredenciales(string correo, string clave)
         {
+            if (clave == null) {
+                return new Usuario();
+            }
             string clave_encriptada = _utilidadesService.ConvertirSha256(clave);
 
             Usuario usuario_encontrado = await _repositorio.Obtener(u => u.Correo.Equals(correo)

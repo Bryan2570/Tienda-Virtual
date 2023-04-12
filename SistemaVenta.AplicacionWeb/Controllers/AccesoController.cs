@@ -45,6 +45,11 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             }
             ViewData["Mensaje"] = null;
 
+            if (modelo.Clave == null) {
+                ViewData["Mensaje"] = "Por favor escribir contraseña";
+                return View();
+            }
+
             //Lista de claims nos sirve para guardar la información de un usuario
 
             List<Claim> claims = new List<Claim>() {
