@@ -8,6 +8,7 @@ using System.Linq.Expressions;
 
 namespace SistemaVenta.DAL.Interfaces
 {
+    //metodo Generico para que pueda ser consumido por todas las entidades
     public interface IGenericRepository<TEntity> where TEntity : class
     {
         Task<TEntity> Obtener(Expression<Func<TEntity, bool>> filtro);

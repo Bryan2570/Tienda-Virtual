@@ -15,6 +15,7 @@ namespace SistemaVenta.DAL.Implementacion
     {
         private readonly DBVENTAContext _dbContext;
 
+        //base(dbContext) indicamos que le vamos amandar el contexto genericRepositori
         public VentaRepository(DBVENTAContext dbContext) : base(dbContext)
         {
             _dbContext = dbContext;
@@ -31,12 +32,12 @@ namespace SistemaVenta.DAL.Implementacion
                     {
                         Producto productoEncontrado = _dbContext.Productos.Where(p => p.IdProducto == dv.IdProducto).First(); //Primer producto encontrado
 
-                        productoEncontrado.Stock = productoEncontrado.Stock - dv.Cantidad; //disminuyendo
-                        _dbContext.Productos.Update(productoEncontrado);
+                        productoEncontrado.Stock = productoEncontrado.Stock - dv.Cantidad; //disminuyendo con la propiedad => Stock
+                        _dbContext.Productos.Update(productoEncontrado); //actualizamos el producto encontrado con el stock disminuiodo
                     }
-                    await _dbContext.SaveChangesAsync();
+                    await _dbContext.SaveChangesAsync(); //guardamos lo cambios de las operaciones realizadas
 
-                    NumeroCorrelativo correlativo = _dbContext.NumeroCorrelativos.Where(n => n.Gestion == "venta").First();
+                    NumeroCorrelativo correlativo = _dbContext.NumeroCorrelativos.Where(n => n.Gestion == "venta").First(); //generamos un numero correlativo
 
                     correlativo.UltimoNumero = correlativo.UltimoNumero + 1;
                     correlativo.FechaActualizacion = DateTime.Now;
@@ -55,7 +56,7 @@ namespace SistemaVenta.DAL.Implementacion
 
                     ventaGenerada = entidad;
 
-                    transaction.Commit();
+                    transaction.Commit();//si todo se cumple ya no van hacer temporales 
 
                 }
                 catch (Exception ex)

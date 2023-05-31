@@ -21,6 +21,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         option.ExpireTimeSpan = TimeSpan.FromMinutes(20); //tiempo expiración
     });
 
+//la capa de aplicacion web va tomar toda la configuracion por medio del metodo
 builder.Services.InyectarDependencia(builder.Configuration);
 
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
@@ -48,6 +49,8 @@ app.UseRouting();
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+//app.UseWelcomePage();
 
 app.MapControllerRoute(
     name: "default",

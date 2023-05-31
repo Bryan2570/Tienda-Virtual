@@ -26,6 +26,7 @@ namespace SistemaVenta.DAL.Implementacion
         {
             try 
             { 
+                //especificamos la entidad que estamos trabajando , y que encuentre el primero si no que nos devuelva nulo
             TEntity entidad = await _dbContext.Set<TEntity>().FirstOrDefaultAsync(filtro);
                 return entidad; 
             }
@@ -40,6 +41,7 @@ namespace SistemaVenta.DAL.Implementacion
         {
             try
             {
+                //agregamos la entidad, guardamos de forma asincrona y retornamos la entidad que hemos creado
                _dbContext.Set<TEntity>().Add(entidad);
                 await _dbContext.SaveChangesAsync();
                 return entidad;
@@ -69,7 +71,7 @@ namespace SistemaVenta.DAL.Implementacion
         {
             try
             {
-                //_dbContext.Update(entidad);
+                //_dbContext.Remove(entidad);
                 _dbContext.Set<TEntity>().Remove(entidad);
                 await _dbContext.SaveChangesAsync();
                 return true;
@@ -81,6 +83,8 @@ namespace SistemaVenta.DAL.Implementacion
         }
         public async Task<IQueryable<TEntity>> Consultar(Expression<Func<TEntity, bool>> filtro = null)
         {
+            //lo primero que hacemos es validar si nuestro filtro es igual a nulo, entonces que devuelva la consulta a esa tabla o entidad
+            // en caso de que el filtro exista o sea diferente de nulo, entonces necesitamos hacer un select a esa tabla con esos filtros
             IQueryable<TEntity> queryEntidad = filtro == null ? _dbContext.Set<TEntity>() : _dbContext.Set<TEntity>().Where(filtro);
             return queryEntidad;
          }

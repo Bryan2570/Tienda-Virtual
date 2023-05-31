@@ -21,8 +21,10 @@ namespace SistemaVenta.IOC
 
         public static void InyectarDependencia(this IServiceCollection services, IConfiguration Configuration)
         {
+            //añadimos referencias de la conexion
             services.AddDbContext<DBVENTAContext>(options =>
             {
+                //leemos la cadena de conexion
                 options.UseSqlServer(Configuration.GetConnectionString("CadenaSQL"));
             });
 
