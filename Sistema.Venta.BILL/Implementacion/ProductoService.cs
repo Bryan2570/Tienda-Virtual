@@ -50,7 +50,7 @@ namespace Sistema.Venta.BLL.Implementacion
                 Producto producto_creado = await _repositorio.Crear(entidad);
 
                 if (producto_creado.IdProducto == 0) 
-                    throw new TaskCanceledException("No se pudo crear el prodcuto");
+                    throw new TaskCanceledException("No se pudo crear el producto");
 
                 IQueryable<Producto> query = await _repositorio.Consultar(p => p.IdProducto == producto_creado.IdProducto);
 

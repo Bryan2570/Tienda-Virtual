@@ -27,9 +27,9 @@ $(document).ready(function(){
     VISTA_BUSQUEDA["busquedaFecha"]()
 
 
-    $.datepicker.setDefaults($.datepicker.regional["es"])
+    $.datepicker.setDefaults($.datepicker.regional["es"]) // fecha por defecto en español
 
-    $("#txtFechaInicio").datepicker({dateFormat : "dd/mm/yy"})
+    $("#txtFechaInicio").datepicker({dateFormat : "dd/mm/yy"}) //formato de fecha
     $("#txtFechaFin").datepicker({ dateFormat: "dd/mm/yy" })
 
 })
@@ -81,6 +81,7 @@ $("#btnBuscar").click(function () {
 
                 responseJson.forEach((venta) => {
 
+                    //pinto la tabla historial venta en el tbody
                     $("#tbventa tbody").append(
                         $("<tr>").append(
                             $("<td>").text(venta.fechaRegistro),
@@ -102,11 +103,12 @@ $("#btnBuscar").click(function () {
 })
 
 
+//click al icono para que se abra modal
 $("#tbventa tbody").on("click", ".btn-info", function () {
-
 
     let d = $(this).data("venta")
 
+    //pintamos el valor a las cajas de texto
     $("#txtFechaRegistro").val(d.fechaRegistro)
     $("#txtNumVenta").val(d.numeroVenta)
     $("#txtUsuarioRegistro").val(d.usuario)
@@ -119,10 +121,11 @@ $("#tbventa tbody").on("click", ".btn-info", function () {
 
 
 
-    $("#tbProductos tbody").html("");  
+    $("#tbProductos tbody").html("");  //limpiamos el body de una tabla
 
         d.detalleVenta.forEach((item) => {
 
+            //creamos fila y columnas
             $("#tbProductos tbody").append(
                 $("<tr>").append(
                     $("<td>").text(item.descripcionProducto),
@@ -138,7 +141,7 @@ $("#tbventa tbody").on("click", ".btn-info", function () {
 
     $("#linkImprimir").attr("href", `/Venta/MostrarPDFVenta?numeroVenta=${d.numeroVenta}`);
 
-
+    //mostramos modal
     $("#modalData").modal("show");
 
 

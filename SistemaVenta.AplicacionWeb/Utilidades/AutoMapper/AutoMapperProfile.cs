@@ -7,11 +7,12 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.AutoMapper
 {
     public class AutoMapperProfile : Profile
     {
-
+        // En esta clases vamos a definir como va a ser la conversion de nuestros modelos a ViewModels y tambien al reves 
         public AutoMapperProfile()
         {
+            // Creamos un mapeo primero el origen y despues el destino 
             #region Rol
-            CreateMap<Rol, VMRol>().ReverseMap();
+            CreateMap<Rol, VMRol>().ReverseMap(); //Con el ReverseMap podemos convertir al contrario
             #endregion
 
             #region Usuario
@@ -32,7 +33,7 @@ namespace SistemaVenta.AplicacionWeb.Utilidades.AutoMapper
                 )
                 .ForMember(destino =>
                 destino.IdRolNavigation,
-                opt => opt.Ignore());
+                opt => opt.Ignore()); //Ingnora y no realiza ninguna conversión
             #endregion
 
             #region Negocio

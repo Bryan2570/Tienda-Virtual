@@ -52,7 +52,6 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
 
         [HttpPost]
-        //DEVOLVER LA INFORMACIÓN DEL NEGOCIO
         public async Task<IActionResult> GuardarCambios([FromForm]IFormFile logo, [FromForm]string modelo)
         {
             GenericResponse<VMNegocio> gResponse = new GenericResponse<VMNegocio>();
@@ -74,6 +73,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
                 Negocio negocio_editado = await _negocioService.GuardarCambios(_mapper.Map<Negocio>(vmNegocio), logoStream, nombreLogo);
                   
+                //convertimos a ViewNegocio el negocio_editado
                 vmNegocio = _mapper.Map<VMNegocio>(negocio_editado);
 
                 gResponse.Estado = true;

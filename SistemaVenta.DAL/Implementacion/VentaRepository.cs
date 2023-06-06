@@ -56,7 +56,7 @@ namespace SistemaVenta.DAL.Implementacion
 
                     ventaGenerada = entidad;
 
-                    transaction.Commit();//si todo se cumple ya no van hacer temporales 
+                    transaction.Commit();//si todo se cumple ya no van hacer temporales lo anterior 
 
                 }
                 catch (Exception ex)
@@ -71,10 +71,10 @@ namespace SistemaVenta.DAL.Implementacion
         public async Task<List<DetalleVenta>> Reporte(DateTime FechaInicio, DateTime FechaFin)
         {
             List<DetalleVenta> listaResumen = await _dbContext.DetalleVenta
+                .Include(v => v.IdVentaNavigation) //Include sirve como un Join
+                .ThenInclude(u => u.IdUsuarioNavigation) // ThenInclude ya que tenemos el usuario en la tabla venta
                 .Include(v => v.IdVentaNavigation)
-                .ThenInclude(u => u.IdUsuarioNavigation)
-                .Include(v => v.IdVentaNavigation)
-                .ThenInclude(tdv => tdv.IdTipoDocumentoVentaNavigation)
+                .ThenInclude(tdv => tdv.IdTipoDocumentoVentaNavigation) // ThenInclude ya que tenemos el IdTipoDocumentoVentaNavigation en la tabla venta
                 .Where(dv => dv.IdVentaNavigation.FechaRegistro.Value.Date >= FechaInicio.Date && 
                 dv.IdVentaNavigation.FechaRegistro.Value.Date <= FechaFin.Date).ToListAsync();
 

@@ -45,7 +45,7 @@ namespace Sistema.Venta.BLL.Implementacion
         public async Task<Usuario> Crear(Usuario entidad, Stream Foto = null, string NombreFoto = "", string UrlPlantillaCorreo = "")
         {
 
-            Usuario usuario_existe = await _repositorio.Obtener(u => u.Correo == entidad.Correo);
+            Usuario usuario_existe = await _repositorio.Obtener(u => u.Correo == entidad.Correo); // validamos si el usuario ya tiene ese correo para poder crearlo
 
             if (usuario_existe != null) 
                 throw new TaskCanceledException("El correo ya existe");
@@ -64,9 +64,11 @@ namespace Sistema.Venta.BLL.Implementacion
 
                 Usuario usuario_creado = await _repositorio.Crear(entidad);
 
+                //validamos la creacion del usuario
                 if(usuario_creado.IdUsuario == 0)
                     throw new TaskCanceledException("No se pudo crear el usuario");
 
+                //logica para el envio de correo
                 if (UrlPlantillaCorreo != "")
                 {
                     UrlPlantillaCorreo = UrlPlantillaCorreo.Replace("[correo]", usuario_creado.Correo).Replace("[clave]", clave_generada);

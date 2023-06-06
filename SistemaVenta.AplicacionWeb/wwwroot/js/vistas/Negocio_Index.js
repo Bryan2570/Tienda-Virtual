@@ -7,7 +7,7 @@ $(document).ready(function () {
     fetch("/Negocio/Obtener")
         .then(response => {
             $(".card-body").LoadingOverlay("hide");
-            return response.ok ? response.json() : Promise.reject(response);
+            return response.ok ? response.json() : Promise.reject(response); //si responde una error lo cancela en caso contrario responde un JSON  
         })
         .then(responseJson => {
 
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 $("#btnGuardarCambios").click(function () {
 
-    const inputs = $("input.input-validar").serializeArray();
+    const inputs = $("input.input-validar").serializeArray(); //serializamos todos los inputs
     //console.log(inputs)
     const inputs_sin_valor = inputs.filter((item) => item.value.trim() == "");
     //console.log(inputs_sin_valor)

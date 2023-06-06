@@ -36,7 +36,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         [HttpGet]
         public async Task<IActionResult> ListaRoles()
         {
-            List<VMRol> vmListaRoles = _mapper.Map<List<VMRol>>(await _rolServicio.Lista());
+            List<VMRol> vmListaRoles = _mapper.Map<List<VMRol>>(await _rolServicio.Lista()); // Concertimos la Lista tipo Rol en una Lista tipo VMRol
             return StatusCode(StatusCodes.Status200OK, vmListaRoles);
         }
 
@@ -44,7 +44,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         public async Task<IActionResult> Lista()
         {
             List<VMUsuario> vmUsuarioLista = _mapper.Map<List<VMUsuario>>(await _usuarioService.Lista());
-            return StatusCode(StatusCodes.Status200OK, new { data = vmUsuarioLista });
+            return StatusCode(StatusCodes.Status200OK, new { data = vmUsuarioLista }); // new { data = vmUsuarioLista } => Trabajamos este formato de data porque vamos a trabajar JQuery
         }
 
         [HttpPost]

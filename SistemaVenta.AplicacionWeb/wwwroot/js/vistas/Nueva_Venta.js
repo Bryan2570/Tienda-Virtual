@@ -29,7 +29,7 @@
                 $("#inputGroupIGV").text(`IGV(${d.porcentajeImpuesto}%) - ${d.simboloMoneda}`)
                 $("#inputGroupTotal").text(`Total - ${d.simboloMoneda}`)
 
-                ValorImpuesto = parseFloat(d.porcentajeImpuesto)
+                ValorImpuesto = parseFloat(d.porcentajeImpuesto) // guardamos el porcentaje de impuesto, para hacer operaciones
             }           
         })
 
@@ -41,13 +41,13 @@
             delay: 250,
             data: function (params) {
                 return {
-                    busqueda: params.term
+                    busqueda: params.term // valor que colocamos en el desplegable
                 };
             },
             processResults: function (data,) {
 
                 return {
-                    results: data.map((item) => (
+                    results: data.map((item) => ( //map nos ayuda a iterar mas rapido
                         {
                             id: item.idProducto,
                             text: item.descripcion,
@@ -63,7 +63,7 @@
         },
         language: "es",
         placeholder: 'Buscar Producto...',
-        minimumInputLength: 1,
+        minimumInputLength: 1, //apartir de cuantas letras empieza a realizar la busqueda
         templateResult: formateResultado
     });
 })
@@ -75,6 +75,7 @@ function formateResultado(data) {
     }
 
     var container = $(
+        //tr: fila
         `<table width="100%">
             <tr>
                 <td style="width:60px">

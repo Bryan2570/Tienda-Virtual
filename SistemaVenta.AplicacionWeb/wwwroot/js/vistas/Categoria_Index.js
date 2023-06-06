@@ -80,10 +80,11 @@ $("#btnGuardar").click(function () {
     if ($("#txtDescripcion").val().trim() == "") {
 
         toastr.warning("", "Debe completar el campo descripcion")
-        $("#txtDescripcion").focus()
+        $("#txtDescripcion").focus() //focus para seleccionar solo ese campo
         return;
     }
 
+    //hacemos una copia de la estructura del modelo Base
     const modelo = structuredClone(MODELO_BASE)
     modelo["idCategoria"] = parseInt($("#txtId").val())
     modelo["descripcion"] = $("#txtDescripcion").val()
@@ -106,7 +107,7 @@ $("#btnGuardar").click(function () {
 
                 if (responseJson.estado) {
 
-                    tablaData.row.add(responseJson.objeto).draw(false)
+                    tablaData.row.add(responseJson.objeto).draw(false)//agregamos el objeto a la tabla
                     $("#modalData").modal("hide")
                     swal("Listo!", "La Categoria fue creado", "success")
                 } else {
@@ -128,7 +129,7 @@ $("#btnGuardar").click(function () {
 
                 if (responseJson.estado) {
 
-                    tablaData.row(filaSeleccionada).data(responseJson.objeto).draw(false);
+                    tablaData.row(filaSeleccionada).data(responseJson.objeto).draw(false); 
                     filaSeleccionada = null;
                     $("#modalData").modal("hide")
                     swal("Listo!", "La Categoria ha sido Editado", "success")

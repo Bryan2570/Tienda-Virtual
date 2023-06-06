@@ -38,7 +38,7 @@ $(document).ready(function () {
         },
         "columns": [
             //searchable permite al datable a realizar la busqueda
-            { "data": "idUsuario", "visible": false, "searchable": false },
+            { "data": "idUsuario", "visible": false, "searchable": false }, //ocultamos todo
             {
                 "data": "urlFoto", render: function (data) {
                     return `<img style="height:60px" src=${data} class="rounded mx-auto d-block">`
@@ -60,8 +60,8 @@ $(document).ready(function () {
             {
                 "defaultContent": '<button class="btn btn-primary btn-editar btn-sm mr-2"><i class="fas fa-pencil-alt"></i></button>' +
                     '<button class="btn btn-danger btn-eliminar btn-sm"><i class="fas fa-trash-alt"></i></button>',
-                "orderable": false,
-                "searchable": false,
+                "orderable": false, //propiedades para poder ordenar 
+                "searchable": false, //propiedades para poder buscar
                 "width": "80px"
             }
         ],
@@ -74,12 +74,12 @@ $(document).ready(function () {
                 title: '',
                 filename: 'Reporte Usuarios',
                 exportOptions: {
-                    columns: [2, 3, 4, 5, 6]
+                    columns: [2, 3, 4, 5, 6] // exportamos estas columnas 
                 }
             }, 'pageLength'
         ],
         language: {
-            url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+            url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json" // lenguaje en el cual voy a mostrar el dataTable en spanish
         },
     });
 
@@ -109,12 +109,12 @@ $("#btnNuevo").click(function () {
 $("#btnGuardar").click(function () {
     const inputs = $("input.input-validar").serializeArray();
     //console.log(inputs)
-    const inputs_sin_valor = inputs.filter((item) => item.value.trim() == "");
+    const inputs_sin_valor = inputs.filter((item) => item.value.trim() == ""); //nos devuelve todos los inputs vacios 
     //console.log(inputs_sin_valor)
 
     if (inputs_sin_valor.length > 0) {
         const mensaje = `Debe completar el campo : "${inputs_sin_valor[0].name}"`;
-        toastr.warning("", mensaje)
+        toastr.warning("", mensaje)  //toastr libreria para mostrar msj
         $(`input[name="${inputs_sin_valor[0].name}"]`).focus()
         return;
     }
@@ -132,9 +132,9 @@ $("#btnGuardar").click(function () {
     const formData = new FormData();
 
     formData.append("foto", inputFoto.files[0])
-    formData.append("modelo", JSON.stringify(modelo))
+    formData.append("modelo", JSON.stringify(modelo)) //convertimos modelos en una cadena de texto
 
-    $("#modalData").find("div.modal-content").LoadingOverlay("show");
+    $("#modalData").find("div.modal-content").LoadingOverlay("show"); //mostramos un preview, libreria vendor
 
     if (modelo.idUsuario == 0) {
 
@@ -192,10 +192,9 @@ $("#tbdata tbody").on("click", ".btn-editar", function () {
         filaSeleccionada = $(this).closest("tr").prev();
     } else {
         filaSeleccionada = $(this).closest("tr");
-
     }
 
-    const data = tablaData.row(filaSeleccionada).data();
+    const data = tablaData.row(filaSeleccionada).data(); //traemos la data de la fila seleccionada
 
     mostrarModal(data);
 })
@@ -225,7 +224,7 @@ $("#tbdata tbody").on("click", ".btn-eliminar", function () {
         confirmButtonText: "Si, eliminar",
         cancelButtonText: "No, cancelar",
         closeOnConfirm: false,
-        closeOnCancel: true
+        closeOnCancel: true //cuando presiona cancelar se cierra
     },
 
         function (respuesta) {

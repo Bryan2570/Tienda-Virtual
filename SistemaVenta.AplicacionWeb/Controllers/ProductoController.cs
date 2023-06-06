@@ -49,7 +49,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
             try
             {
-                VMProducto vmProducto = JsonConvert.DeserializeObject<VMProducto>(modelo);
+                VMProducto vmProducto = JsonConvert.DeserializeObject<VMProducto>(modelo); //convertimos clases string en ViewModelProducto
 
                 string nombreImagen = "";
                 Stream imagenStream = null;
@@ -57,7 +57,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                 if (imagen != null) { 
                 
                     string nombre_en_codigo = Guid.NewGuid().ToString("N");
-                    string extension = Path.GetExtension(imagen.FileName);
+                    string extension = Path.GetExtension(imagen.FileName); //extension de la imagen
                     nombreImagen = string.Concat(nombre_en_codigo, extension);
                     imagenStream = imagen.OpenReadStream();
                 }

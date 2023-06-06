@@ -28,7 +28,7 @@ namespace SistemaVenta.IOC
                 options.UseSqlServer(Configuration.GetConnectionString("CadenaSQL"));
             });
 
-            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));//utilizamos trasiente porque es generico y no sabemos con que entidad estamos trabajando ni los valores
             services.AddScoped<IVentaRepository, VentaRepository>();
 
             //Dependencia del envio de correo
@@ -36,7 +36,7 @@ namespace SistemaVenta.IOC
             services.AddScoped<IFirebaseService, FirebaseService>();
 
 
-            services.AddScoped<IUtilidadesService, UtilidadesService>();
+            services.AddScoped<IUtilidadesService, UtilidadesService>(); //Password
             services.AddScoped<IRolService, RolService>();
 
 

@@ -39,16 +39,17 @@ namespace Sistema.Venta.BLL.Implementacion
                 //token de cancelacion
                 var cancellation = new CancellationTokenSource();
 
+                //creamos una tarea que ejecute el servicio de firebase storage
                 var task = new FirebaseStorage(
                     Config["ruta"],
-                    new FirebaseStorageOptions
+                    new FirebaseStorageOptions //opciones de firebase
                     {
                         AuthTokenAsyncFactory = () => Task.FromResult(a.FirebaseToken),
-                        ThrowOnCancel = true
+                        ThrowOnCancel = true //si ocurre un error que lo cancele
                     })
-                    .Child(Config[CarpetaDestino])
-                    .Child(NombreArchivo)
-                    .PutAsync(StreamArchivo, cancellation.Token);
+                    .Child(Config[CarpetaDestino]) //creamos las carpetas
+                    .Child(NombreArchivo)  //creamos nombre de archivo
+                    .PutAsync(StreamArchivo, cancellation.Token); // PutAsync copiamos el archivo como un formato de Stream
 
                 UrlImagen = await task;
             }
@@ -81,7 +82,7 @@ namespace Sistema.Venta.BLL.Implementacion
                     })
                     .Child(CarpetaDestino)
                     .Child(NombreArchivo)
-                    .DeleteAsync();
+                    .DeleteAsync(); // Eliminar el archivo de nuestro servicio
 
                  await task;
                 return true;

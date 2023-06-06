@@ -15,7 +15,7 @@ namespace Sistema.Venta.BLL.Implementacion
         public string GenerarClave()
         {
             //Nos retorna una cadena de texto aleatoria ("N") ==>> formato N indica que estamos utilizando num y letras
-           string clave = Guid.NewGuid().ToString("N").Substring(0,6);
+           string clave = Guid.NewGuid().ToString("N").Substring(0,6); // nos retorna cadena de texto aleatoria 'Guid.NewGuid' ,, Substring(0,6) indicamos que 6 digitos
             return clave;
         }
 
@@ -24,11 +24,11 @@ namespace Sistema.Venta.BLL.Implementacion
         {
             StringBuilder sb = new StringBuilder();
 
-            using (SHA256 hash = SHA256Managed.Create()) { 
+            using (SHA256 hash = SHA256Managed.Create()) {  // creamos el objeto para encriptar el texto
             
-            Encoding enc = Encoding.UTF8;
+            Encoding enc = Encoding.UTF8; // formato enconding
 
-                byte[] result = hash.ComputeHash(enc.GetBytes(texto));
+                byte[] result = hash.ComputeHash(enc.GetBytes(texto)); //convierte el texto en una array de bytes
 
                 foreach (byte b in result) { 
                 

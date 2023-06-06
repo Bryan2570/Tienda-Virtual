@@ -20,7 +20,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
         private readonly ITipoDocumentoVentaService _tipoDocumentoVentaServicio;
         private readonly IVentaService _ventaServicio;
         private readonly IMapper _mapper;
-        private readonly IConverter _converter;
+        private readonly IConverter _converter;  //Servicio de la libreria DinkToPDF
 
         public VentaController(ITipoDocumentoVentaService tipoDocumentoVentaServicio, IVentaService ventaServicio, IMapper mapper, IConverter converter)
         {
@@ -106,8 +106,8 @@ namespace SistemaVenta.AplicacionWeb.Controllers
             {
                 GlobalSettings = new GlobalSettings()
                 {
-                    PaperSize = PaperKind.A4,
-                    Orientation = Orientation.Portrait,
+                    PaperSize = PaperKind.A4, //tamaño
+                    Orientation = Orientation.Portrait,  //orinetacion del documento
                 },
                 Objects = {
                     new ObjectSettings() {
