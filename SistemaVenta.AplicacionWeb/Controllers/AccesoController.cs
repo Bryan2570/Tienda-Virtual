@@ -4,7 +4,7 @@ using SistemaVenta.AplicacionWeb.Models.ViewModels;
 using Sistema.Venta.BLL.Interfaces;
 using SistemaVentas.Entity;
 
-using System.Security.Claims;
+using System.Security.Claims; //Seguridad de autenticacion por cokiies
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 
@@ -21,9 +21,9 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
         public IActionResult Login()
         {
-            ClaimsPrincipal claimUser = HttpContext.User;
+            ClaimsPrincipal claimUser = HttpContext.User; //guardamos la sesion del usuario
 
-            if (claimUser.Identity.IsAuthenticated) {
+            if (claimUser.Identity.IsAuthenticated) { //validmaos si existe un usuario o no 
                 return RedirectToAction("Index", "Home");           
             }
             return View();
@@ -59,12 +59,12 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                 new Claim("UrlFoto", usuario_encontrado.UrlFoto),
             };
 
-            ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme); //tipo de autenticación
 
-            AuthenticationProperties properties = new AuthenticationProperties()
+            AuthenticationProperties properties = new AuthenticationProperties() //propiedades
             {
-                AllowRefresh = true,
-                IsPersistent = modelo.MantenerSesion         
+                AllowRefresh = true, //permite el refrescado de la pagina
+                IsPersistent = modelo.MantenerSesion     // persiste la sesion y la saca del modelo   
             };
 
             //registramos el logueo

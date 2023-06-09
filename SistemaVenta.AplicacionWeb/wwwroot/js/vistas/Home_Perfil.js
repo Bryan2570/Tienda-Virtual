@@ -58,7 +58,7 @@ $("#btnGuardarCambios").click(function () {
     },
 
         function (respuesta) {
-
+            //si pressiona si devuelve true y entra aca 
             if (respuesta) {
 
                 $(".showSweetAlert").LoadingOverlay("show");
@@ -134,7 +134,7 @@ $("#btnCambiarClave").click(function () {
 
             if (responseJson.estado) {
                 swal("Listo!", "La contraseña fue actualizada correctamente", "success")
-                $("input.input-validar").val("");
+                $("input.input-validar").val(""); //limpiamos el contenido de la caja de texto
             } else {
                 swal("Lo sentimos", responseJson.mensaje, "error")
             }

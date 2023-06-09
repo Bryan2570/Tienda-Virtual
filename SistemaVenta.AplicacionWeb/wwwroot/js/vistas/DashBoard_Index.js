@@ -29,7 +29,7 @@ $(document).ready(function () {
 
                 if (d.ventasUltimaSemanas.length > 0) {
 
-                    barchart_labaels = d.ventasUltimaSemanas.map((item) => {return item.fecha })
+                    barchart_labaels = d.ventasUltimaSemanas.map((item) => {return item.fecha }) //creamos un array nuevo solo con la fecha 
                     barchart_data = d.ventasUltimaSemanas.map((item) => {return item.total })
                 } else {
                     barchart_labaels = ["Sin resultados"]
@@ -52,7 +52,7 @@ $(document).ready(function () {
                 // Bar Chart Example
                 let controlVenta = document.getElementById("chartVentas");
                 let myBarChart = new Chart(controlVenta, {
-                    type: 'bar', //tipo grafico
+                    type: 'bar', //tipo grafico barras
                     data: {
                         labels: barchart_labaels,
                         datasets: [{

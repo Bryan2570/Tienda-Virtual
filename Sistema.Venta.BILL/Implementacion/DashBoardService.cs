@@ -98,8 +98,8 @@ namespace Sistema.Venta.BLL.Implementacion
                 .Consultar(v => v.FechaRegistro.Value.Date >= FechaInicio.Date);
 
                 Dictionary<string, int> resultado = query
-                    .GroupBy(v => v.FechaRegistro.Value.Date).OrderByDescending(g => g.Key)
-                    .Select(dv => new { fecha = dv.Key.ToString("dd/MM/yyyy"), total = dv.Count() })
+                    .GroupBy(v => v.FechaRegistro.Value.Date).OrderByDescending(g => g.Key) //ORDENAMOS POR EL VALOR DE GROUP BY
+                    .Select(dv => new { fecha = dv.Key.ToString("dd/MM/yyyy"), total = dv.Count() }) //CREAMOS UN NUEVO OBEJTO CON LA PROPIEDAD DE FECHA Y TOTAL
                     .ToDictionary(keySelector: r => r.fecha, elementSelector: r => r.total);
 
                 return resultado;

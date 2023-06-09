@@ -13,11 +13,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//Login
+//Login : Autenticacion por cokiies
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(option =>
     {
-        option.LoginPath = "/Acceso/Login";
+        option.LoginPath = "/Acceso/Login"; //especificamos el formulario de logueo
         option.ExpireTimeSpan = TimeSpan.FromMinutes(20); //tiempo expiración
     });
 
@@ -46,7 +46,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();
+app.UseAuthentication(); //usamos la autenticacion por cokiies
 
 app.UseAuthorization();
 
@@ -54,6 +54,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Acceso}/{action=Login}/{id?}");
+    pattern: "{controller=Acceso}/{action=Login}/{id?}"); //ruta con la cual espezamos nuestro proyecto
 
 app.Run();

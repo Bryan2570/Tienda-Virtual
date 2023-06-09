@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SistemaVenta.AplicacionWeb.Controllers
 {
-    [Authorize]
+    [Authorize] // no va poder acceder a las vistas si no esta logueado  ==>> igualmente con los otros controladores o metodos
     public class CategoriaController : Controller
     {
         private readonly IMapper _mapper;

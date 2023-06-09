@@ -28,7 +28,7 @@ namespace Sistema.Venta.BLL.Implementacion
             IQueryable<RolMenu> tbRolMenu = await _repositorioRolMenu.Consultar();
             IQueryable<Menu> tbMenu = await _repositorioMenu.Consultar();
 
-            IQueryable<Menu> MenuPadre = (from u in tbUsuario
+            IQueryable<Menu> MenuPadre = (from u in tbUsuario //obtenemos todos los menus padres segun su rol
                                           join rm in tbRolMenu on u.IdRol equals rm.IdRol
                                           join m in tbMenu on rm.IdMenu equals m.IdMenu
                                           join mpadre in tbMenu on m.IdMenuPadre equals mpadre.IdMenu

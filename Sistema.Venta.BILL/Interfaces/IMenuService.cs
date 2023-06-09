@@ -10,6 +10,6 @@ namespace Sistema.Venta.BLL.Interfaces
 {
     public interface IMenuService
     {
-        Task<List<Menu>> ObtenerMenus(int idUsuario);
+        Task<List<Menu>> ObtenerMenus(int idUsuario); //devuelve los menus
     }
 }

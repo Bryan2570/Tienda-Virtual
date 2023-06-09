@@ -83,7 +83,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                     .Where(c => c.Type == ClaimTypes.NameIdentifier)
                     .Select(c => c.Value).SingleOrDefault();
 
-                Usuario entidad = _mapper.Map<Usuario>(modelo);
+                Usuario entidad = _mapper.Map<Usuario>(modelo); //convertimos nuestro modelo a un usuario
 
                 entidad.IdUsuario = int.Parse(idUsuario);
 
@@ -123,7 +123,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
                     modelo.claveNueva
                     );
 
-                response.Estado = resultado;
+                response.Estado = resultado; //devolvemos el resultaod de la operacion
             }
             catch (Exception ex)
             {
@@ -145,7 +145,7 @@ namespace SistemaVenta.AplicacionWeb.Controllers
 
         public async Task<IActionResult> Salir()
         {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme); //terminamos la sesion en la cual esta el usuario
             return RedirectToAction("Login","Acceso");
         }
     }
